@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        //Game model = retriveGameFromDatabase();
+        Game model2 = GameFromDatabase();
         GameView view = new GameView();
 
         Game model= GameView.readGameDetails();
@@ -13,7 +13,7 @@ public class Main {
 
         controller.updateView();
     }
-    private static Game retriveGameFromDatabase(){
+    private static Game GameFromDatabase(){
         Game game = new Game();
 
         game.setName("MyGame");

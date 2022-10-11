@@ -1,6 +1,6 @@
 public class GameController {
-    private Game model;
-    private GameView view;
+    private final Game model;
+    private final GameView view;
 
     public GameController(Game model, GameView view){
         this.model = model;

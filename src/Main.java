@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         //Game model = retriveGameFromDatabase();
-
         GameView view = new GameView();
         Game model=view.readGameDetails();
+
         GameController controller = new GameController(model, view);
 
         controller.updateView();
